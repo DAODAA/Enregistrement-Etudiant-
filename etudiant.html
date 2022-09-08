@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="etudiant.css">
+    <title>etudiantTWF</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="blocIntroduction">
+            <h1><u>TechWomen Factory</u></h1>
+            <h3><u>Enregistrements:</u></h3>
+        </div>
+
+        <div id="blocMatiere">
+            <div id="matiere">
+                <input class="btnNouv" type="button" value="Nouvelle Matiere">
+                <input class="btnMatiere" type="button" value="Afficher Matieres">
+            </div>
+
+            <div id="catalogueMatieres">
+                <div class="tab">
+                    <table id='tabMat'>
+                        <tr>
+                            <th>N <sup>o</sup>:</th>
+                            <th>Code</th>
+                            <th>Nom</th>
+                            <th>Volume Horaire</th>
+                            <th>Prof</th>
+                            <th>Assistant</th>
+                            <th>Drapeau</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="zone1">
+                    <h1><u>Matieres:</u></h1>
+                </div>
+                <input type="button" id="btnSupprMat" value="Supprimer Matiere">
+            </div>
+            <form action="" id="form1">
+                <h1>Enregistrement Matière</h1>
+                <input type="text" id='code1' placeholder="code matiere" required>
+                <input type="number" id='volume1' placeholder="Volume Horaire">
+                <input type="text" id='nom1' placeholder="nom matiere" required>
+                <input type="text" id='prof' placeholder="prof matiere" required>
+                <input type="text" id='ass' placeholder="assistant matiere" required>
+                <input type="text" id='drap' placeholder="drapeau matiere">
+                <div class="btn">
+                    <input type="submit" value="Valider" id="bouton1">
+                    <input type="reset" value="Effacer" id="boutonEff">
+                </div>
+            </form> <br>
+        </div>
+
+        <hr>
+
+        <div id="blocEtudiant">
+            <div id="etudiant">
+                <input class="btnNouv" type="button" value="Nouvel Etudiant">
+                <input class="btnAffiche" type="button" value="Afficher Etudiants">
+            </div>
+            <div id="catalogueEtudiants">
+                <div class="tab">
+                    <table id="tabEtudiant">
+                        <tr>
+                            <th>N <sup>o</sup>:</th>
+                            <th>Matricule</th>
+                            <th>Nom & Prenoms</th>
+                            <th>Date de naissance</th>
+                            <th>Lieu de naissance</th>
+                            <th>Sexe</th>
+                            <th>Taille</th>
+                            <th>Poids</th>
+                            <th>Parcours</th>
+                            <th>Matières</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="zone2">
+                    <h1><u>Etudiants:</u></h1>
+                </div>
+                <input type="button" id="btnSupprEt" value="Supprimer Etudiant">
+            </div>
+            <form action="" id="form2">
+                <h1>Enregistrement Etudiant</h1>
+                <label>Matricule:
+                    <input type="text" id="mat" placeholder="Matricule Etudiant" required>
+                </label>
+                <label>Nom & Prenom:
+                    <input type="text" id='nom' placeholder="Nom etudiant" required>
+                </label>
+                <label>Date Naissance
+                    <input type="text" id='dateNaiss' placeholder="Date de naissance Etudiant" required>
+                </label>
+                <label>Lieu Naissance:
+                    <input type="text" id='lieuNaiss' placeholder="lieu naissance Etudiant" required>
+                </label>
+                <label>Parcours:
+                    <select name="parcours" id="parcours" required>
+                        <option value="Art Numerique">Art Numerique</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Developpement Web">Developpement Web</option>
+                    </select>
+                </label><br>
+                <label>Taille:
+                    <input type="text" id='taille' placeholder="Taille Etudiant">
+                </label>
+                <label>Poids:
+                    <input type="text" id='poids' placeholder="Poids Etudiant">
+                </label>
+                <div id="blocSexe">
+                    Sexe:
+                    <label><small>Homme</small>
+                        <input class="sexe" type="radio" name="sexe" value="H">
+                    </label>
+                    <label><small>Femme</small>
+                        <input class="sexe" type="radio" name="sexe" value="F">
+                    </label>
+                </div>
+                <label>Matieres:
+                    <input type="text" id='matieres' placeholder="Matieres">
+                </label>
+                <div class="btnEtudiant">
+                    <input type="button" value="Valider" id="bouton2">
+                    <input type="reset" value="Effacer" id="boutonEff1">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="etudiant.js"></script>
+</body>
+
+</html>
