@@ -106,3 +106,15 @@ td {
 #blocEtudiant {
     margin-top: 2%;
 }
+
+.btnNouv,
+.btnAffiche,
+.btnMatiere,
+#btnSupprMat,
+#bouton1,
+#boutonEff,
+#btnSupprEt,
+#bouton2,
+#boutonEff1 {
+    border-top: none;
+}
