@@ -29,22 +29,42 @@
   let etudiants = document.getElementById('catalogueEtudiants');
   etudiants.style.display = 'none'; //Display none des Etudiants en vue d 'affichage au click
 
+  let nbClicMatCree = 0;
+  let nbClicEtCree = 0;
+  let nbClicMatAffiche = 0;
+  let nbClicEtAffiche = 0;
   let btnCreationMatiere = document.querySelector('#blocMatiere .btnNouv');
   btnCreationMatiere.addEventListener('click', () => {
+      nbClicMatCree = nbClicMatCree + 1;
       form1.style.display = 'block';
+      if (nbClicMatCree % 2 == 0) {
+          form1.style.display = 'none';
+      }
   }); //affichage du formulaire au click du bouton nouvelle matiere
   let btnAfficheMatiere = document.querySelector('#matiere .btnMatiere');
   btnAfficheMatiere.addEventListener('click', () => {
+      nbClicMatAffiche = nbClicMatAffiche + 1;
       matieres.style.display = 'block';
+      if (nbClicMatAffiche % 2 == 0) {
+          matieres.style.display = 'none';
+      }
   }); //affichage des Matieres au click du bouton Afficher Matieres
 
   let btnCreationEtudiant = document.querySelector('#blocEtudiant .btnNouv');
   btnCreationEtudiant.addEventListener('click', () => {
+      nbClicEtCree = nbClicEtCree + 1;
       form2.style.display = 'block';
+      if (nbClicEtCree % 2 == 0) {
+          form2.style.display = 'none';
+      }
   }); //affichage du formulaire au click du bouton Nouvel Etudiant
   let btnAfficheEtudiant = document.querySelector('#etudiant .btnAffiche');
   btnAfficheEtudiant.addEventListener('click', () => {
+      nbClicEtAffiche = nbClicEtAffiche + 1;
       etudiants.style.display = 'block';
+      if (nbClicEtAffiche % 2 == 0) {
+          etudiants.style.display = 'none';
+      }
   }); //affichage des Etudiants au click du bouton Afficher Etudiant
 
   let btn = document.getElementById('bouton1');
@@ -169,3 +189,4 @@
       tr1.appendChild(td10);
       tableauEtudiant.appendChild(tr1);
   });
+  /***********************************************************************************************/
