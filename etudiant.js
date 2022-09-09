@@ -86,11 +86,11 @@
           nbMat += 1; //Au clic il sera incremente en vue de la numerotation
           document.getElementById('zone1').innerHTML += '<h3> Numero ' + nbMat + ':</h3>';
           document.getElementById('zone1').innerHTML += '<p><u>Code:</u> ' + mat.code + '</p>';
-          document.getElementById('zone1').innerHTML += '<p><u>Nom:</u>' + mat.nom + '</p>';
-          document.getElementById('zone1').innerHTML += '<p><u>VH:</u>' + mat.volumeHoraire + '</p>';
-          document.getElementById('zone1').innerHTML += '<p><u>Enseignant:</u>' + mat.prof + '</p>';
-          document.getElementById('zone1').innerHTML += '<p><u>Assistant:</u>' + mat.assistant + '</p>';
-          document.getElementById('zone1').innerHTML += '<p><u>Drapeau:</u>' + mat.drapeau + '</p>';
+          document.getElementById('zone1').innerHTML += '<p><u>Nom:</u> ' + mat.nom + '</p>';
+          document.getElementById('zone1').innerHTML += '<p><u>VH:</u> ' + mat.volumeHoraire + '</p>';
+          document.getElementById('zone1').innerHTML += '<p><u>Enseignant:</u> ' + mat.prof + '</p>';
+          document.getElementById('zone1').innerHTML += '<p><u>Assistant:</u> ' + mat.assistant + '</p>';
+          document.getElementById('zone1').innerHTML += '<p><u>Drapeau:</u> ' + mat.drapeau + '</p>';
 
 
           //Creation des elements du tableau Matiere en vue d'enregistrement
