@@ -122,15 +122,15 @@
 
       nbEtudiant += 1;
       document.getElementById('zone2').innerHTML += '<h3> Numero ' + nbEtudiant + ':</h3>';
-      document.getElementById('zone2').innerHTML += Etudiant.mat + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.nom + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.dateNaiss + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.lieuNaiss + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.sexe + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.taille + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.poids + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.parcours + '<br>';
-      document.getElementById('zone2').innerHTML += Etudiant.matieres + '<br>';
+      document.getElementById('zone2').innerHTML += '<p><u>Matricule:</u> ' + Etudiant.mat + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Nom & Prenom:</u> ' + Etudiant.nom + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Date Naissance:</u> ' + Etudiant.dateNaiss + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Lieu Naissance:</u> ' + Etudiant.lieuNaiss + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Sexe:</u> ' + Etudiant.sexe + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Taille:</u> ' + Etudiant.taille + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Poids:</u> ' + Etudiant.poids + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Parcours:</u> ' + Etudiant.parcours + '</p>';
+      document.getElementById('zone2').innerHTML += '<p><u>Matieres:</u> ' + Etudiant.matieres + '</p>';
 
 
       //Creation des lignes pour enregistrement des etudiants au tableau
